@@ -1,0 +1,137 @@
+/* IMPORTED LINKS: NORMALIZE AND FONTS */
+
+@import url('https://necolas.github.io/normalize.css/8.0.0/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* ELEMENT AND CLASS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+  
+.main-header {
+  color: darkslategrey;
+  text-align: center;
+  background: url('img/header-img.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: 10px solid cornflowerblue;
+  box-shadow: inset 0 0 30px grey;
+  padding: 20px 15px; 
+}
+
+.logo {
+width: 150px;
+border-radius: 50%;
+border: 5px solid cornflowerblue;
+transition: .5s ease-in-out;
+box-shadow: 3px 3px 5px black;
+}
+
+header h1,
+header p {
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  display: table;
+  box-shadow: 3px 3px 5px black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+hr {
+  box-shadow: 0 2px 1px grey;
+}
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  background-color: lavender;
+  box-shadow: inset 0 4px 3px grey;
+  border-bottom: 10px solid cornflowerblue;
+}
+
+.footer-wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.footer-wrapper ul {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  float: right;
+}
+
+.footer-wrapper ul li {
+  display: inline;
+  padding: 0 3px;
+}
+
+ion-icon {
+  font-size: 32px;
+  color: grey;
+}
+
+/* SCREEN RESPONSIVE */
+
+@media only screen and (min-width: 768px) {
+
+  .main-header {
+    padding: 50px 15px; 
+  }
+
+  header .logo:hover {
+    transform: scale(1.15) rotate(1080deg);
+    box-shadow: 5px 5px 5px black;
+  }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    border: 5px solid cornflowerblue;
+  }
+
+  .main-footer {
+    padding: 50px;
+  }
+
+  .footer-wrapper {
+    width: 70%;
+  }
+
+  .footer-wrapper ul li {
+    padding: 0 5px;
+  }
+
+  ion-icon {
+    font-size: 48px;
+    transition: .5s ease-in-out;
+  }
+
+  ion-icon:hover {
+    transform: scale(1.25);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  ion-icon {
+    font-size: 64px;
+  }
+}
