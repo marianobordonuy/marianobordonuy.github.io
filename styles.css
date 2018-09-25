@@ -1,0 +1,109 @@
+.logobrand {
+    background-image: url('img/img-bordonuy.jpg');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid steelblue;
+    margin-right: 10px;
+    transition: .5s ease-in-out;
+}
+
+.topborder {
+    border-top: 10px solid steelblue;
+}
+
+.bottomborder {
+    border-bottom: 10px solid steelblue;
+}
+
+.jumbotron {
+    background-image:  url('img/header-img.jpg');
+    text-shadow: -2px 2px black;
+}
+
+.profilePicture {
+    width: 350px;
+    border-radius: 50%;
+    border: 5px solid steelblue;
+}
+
+.social-media {
+    list-style: none;
+}
+
+ion-icon {
+    font-size: 40px;
+    color: lightgrey;
+}
+
+.mail-border {
+    position: relative;
+    z-index: 6;
+    display: block;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.mail-border a {
+    text-decoration: none;
+}
+
+.mail-end {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Source Code Pro",sans-serif;
+    background: RGBA(20,20,20,1);
+    color: #fff;
+    width: 85%;
+    padding: 10px;
+}
+
+footer div.container-fluid {
+    display: flex;
+}
+
+.wider-social {
+    padding: 30px 0;
+}
+.wider-footer {
+    padding: 5px 0;
+}
+
+@media only screen and (min-width: 560px) {
+
+    .logobrand {
+        transition: .5s ease-in-out;
+    }
+
+    .logobrand:hover {
+        transform: scale(1.15) rotate(1080deg);
+        box-shadow: 2px 2px 3px black;
+    }    
+
+    ion-icon {
+        font-size: 70px;
+        transition: .5s ease-in-out;
+    }
+    
+    ion-icon:hover {
+        transform: scale(1.25);
+    }
+
+    .mail-border {
+        font-size: 40px;
+        padding: 60px 0;
+    }
+    
+    .mail-end {
+        width: 75%;
+        padding: 10px;
+    }
+
+    .wider-social {
+        padding: 70px 0;
+    }
+    .wider-footer {
+        padding: 20px 0;
+    }
+}
